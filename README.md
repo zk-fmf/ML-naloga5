@@ -9,4 +9,4 @@ Za učenje modela in hkratno preverjanje uspešnosti na validacijski množici. P
 ### 4. test.py
 Za testiranje modela na testni množici. Ne spreminjaj ```batch_size=10``` in ```shuffle=False```.
 ### 5. run.py
-Primer uporabe učenja in testiranja. 
+Primer uporabe učenja in testiranja na Marvinu. Za lokalno uporabo spremeni ```main_path_to_data```.
