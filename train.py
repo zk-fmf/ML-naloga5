@@ -21,14 +21,13 @@ class Training():
         path_to_model = 'trained_models/' + self.unique_name +  '_' + timedate_info
         os.mkdir(path_to_model)
         
-        # 2. Use cudnn as backend for speed up
-        torch.backends.cudnn.benchmark = True
-        
+        # 2. Load hyperparameters
         learning_rate = hyperparameters['learning_rate']
         weight_decay = hyperparameters['weight_decay']
         total_epoch = hyperparameters['total_epoch']
         multiplicator = hyperparameters['multiplicator']
         
+        # 3. Consider class imbalance
         negative, positive = 0, 0
         for _, label in train_info:
             if label == 0:
