@@ -7,8 +7,6 @@ from model import ModelCT
 from torch.utils.data import DataLoader
 import pickle
 from matplotlib import pyplot as plt
-import cv2
-
 
 if __name__ == "__main__":
     # Nalozimo testne podatke
